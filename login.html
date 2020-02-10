@@ -7,7 +7,7 @@
         <title>Área restrita</title>
 
         <!--Layout, visual, dependências-->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" crossorigin="anonymous">
         <link rel="stylesheet" href="login.css">
         <!--Layout, visual, dependências-->
         
@@ -22,18 +22,18 @@
             <a href="#">Voltar</a>
           </div>
        
-        <form class="form-login">
+        <form class="form-login" id="formLogin">
             
             <h1 class="h3 mb-3 font-weight-normal">Por favor, identifique-se</h1>
        
-            <input type="email" id="inputEmail" class="form-control" placeholder="Insira aqui seu CPF/CNPJ ou e-mail" required autofocus>
+            <input type="email" id="inputEmail" name="inputEmail" class="form-control" placeholder="Insira aqui seu CPF/CNPJ ou e-mail" required autofocus>
             
-            <input type="password" id="inputPassword" class="form-control" placeholder="Insira aqui sua senha" required>
+            <input type="password" id="inputSenha" name="inputSenha" class="form-control" placeholder="Insira aqui sua senha" required>
             <div class="checkbox mb-3">
               <a href="#">Esqueci minha senha</a>
               <a href="#">Esqueci meu e-mail</a>
             </div>
-            <button class="btn btn-lg btn-primary btn-block" type="submit">Acessar</button>
+            <button class="btn btn-danger btn-lg float-right" type="submit">Acessar</button>
             <p class="mt-5 mb-3 text-muted">
                 Primeiro acesso? <a href="#">Cadastre-se</a>
             </p>
@@ -42,7 +42,8 @@
     
     <!--Métodos, funções, libs-->
     <script src="jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="jquery.validate.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
     <script src="login.js"></script>
     <!--Métodos, funções, libs-->
 
